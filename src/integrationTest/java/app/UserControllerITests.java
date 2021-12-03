@@ -44,7 +44,7 @@ public class UserControllerITests {
     @Test
     @DisplayName("/user (POST)")
     void addUser() throws Exception {
-        String user = "{\"username\":\"username\",\"email\":\"string@string.com\"}";
+        String user = "{\"id\":1,\"username\":\"username\",\"email\":\"string@string.com\"}";
         MvcResult response = mockMvc
             .perform(post("/user").content(user).contentType(APPLICATION_JSON))
             .andReturn();
@@ -55,7 +55,7 @@ public class UserControllerITests {
     @Test
     @DisplayName("/user/{id} (PUT)")
     void updateUser() throws Exception {
-        String user = "{\"username\":\"username\",\"email\":\"string@string.com\"}";
+        String user = "{\"id\":1,\"username\":\"username\",\"email\":\"string@string.com\"}";
         MvcResult response = mockMvc
             .perform(put("/user/1").content(user).contentType(APPLICATION_JSON))
             .andReturn();
