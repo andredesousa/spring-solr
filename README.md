@@ -1,4 +1,4 @@
-# CRUD using Spring Data Solr
+# Spring CRUD application with Solr
 
 [Solr](https://solr.apache.org/) is an open-source full-text search engine, providing distributed indexing, replication and load-balanced querying, automated failover and recovery.
 [Spring Data Solr](https://docs.spring.io/spring-data/solr/docs/current/reference/html/) has a clear goal to remove boilerplate codes, which you will definitely take advantage of.
@@ -21,7 +21,6 @@ docker run -d -p 8983:8983 -t solr solr-precreate user
 
 This project template uses **JUnit 5** and **Mockito** to test a **Spring REST API** using **Solr**.
 With the `@SpringBootTest` annotation, Spring Boot provides a convenient way to start up an application context to be used in a test.
-Using the `@DataJpaTest` test slice annotation, you can easily write integration tests for our JPA persistence layer.
 
 ## Project structure
 
@@ -97,6 +96,4 @@ For further reference, please consider the following articles:
 - [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 - [CRUD Using Spring Data Solr](https://dzone.com/articles/crud-application-using-spring-data-solr-and-spring)
 - [Introduction to Spring Data Solr](https://www.baeldung.com/spring-data-solr)
-- [Testing JPA Queries with Spring Boot and @DataJpaTest](https://reflectoring.io/spring-boot-data-jpa-test/)
 - [Testing with Spring Boot and @SpringBootTest](https://reflectoring.io/spring-boot-test/)
-- [Mockito Tutorial](https://www.baeldung.com/mockito-series)
